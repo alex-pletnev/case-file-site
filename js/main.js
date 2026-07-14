@@ -599,7 +599,7 @@ function buildEventCard(event, num) {
   const rotations = [-6, 3, -4, 7, -2.5, 5, -5, 3.5];
   const jitters   = [-5, 10, -8, 12, -10, 7, -6, 11];
   const rotate = rotations[num % rotations.length];
-  const jitter = jitters[num % jitters.length];
+  const jitter = window.innerWidth < 600 ? 0 : jitters[num % jitters.length];
   polaroid.style.transform = `rotate(${rotate}deg) translateX(${jitter}px)`;
 
   const tape = document.createElement('div');

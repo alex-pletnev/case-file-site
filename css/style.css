@@ -49,13 +49,29 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  border: 18px solid #1a0b03;
-  box-shadow:
-    inset 0 0 0 2px #3d1e08,
-    inset 0 0 28px rgba(0,0,0,0.45),
-    inset 2px 2px 8px rgba(80,40,10,0.3);
+  border: 20px solid transparent;
+  /* Дерево: тёплые коричневые тона с видимым зерном */
+  background: linear-gradient(
+    112deg,
+    #6a3a18 0%, #2e1608 16%,
+    #5a3010 30%, #3c1c08 46%,
+    #623418 60%, #2a1206 76%,
+    #5c2e10 90%, #1e0a04 100%
+  ) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
   pointer-events: none;
   z-index: 49;
+}
+
+@media (max-width: 600px) {
+  body::before { border-width: 12px; }
 }
 
 /* Виньетка */
@@ -1299,7 +1315,7 @@ h1, h2 { font-family: var(--font-mono); }
 
   .verdict-text { font-size: 14vw; }
 
-  .section { padding: 40px 16px; }
+  .section { padding: 40px 20px; }
 
   /* Мобильный фикс — папка */
   .stamp-secret { font-size: 9px; letter-spacing: 0.06em; padding: 2px 5px; }
