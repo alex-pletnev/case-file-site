@@ -404,7 +404,7 @@ const THREAD = (() => {
     pathEl.setAttribute('stroke-width', '3');
     pathEl.setAttribute('stroke-linecap', 'round');
     pathEl.setAttribute('stroke-linejoin', 'round');
-    pathEl.style.filter = 'drop-shadow(0 1px 3px rgba(179,53,43,0.5))';
+    pathEl.style.filter = 'drop-shadow(0 0 3px rgba(179,53,43,0.9)) drop-shadow(0 1px 6px rgba(179,53,43,0.4))';
 
     svgEl.appendChild(pathEl);
     container.style.position = 'relative';
@@ -433,18 +433,17 @@ const THREAD = (() => {
     pinPoints = Array.from(polaroids).map(getPinPoint);
     if (pinPoints.length < 2) return;
 
-    const isMobile = window.innerWidth < 600;
+    const W = container.offsetWidth;
+    const leftEdge  = W * 0.06;
+    const rightEdge = W * 0.94;
+
     let d = `M ${pinPoints[0].x} ${pinPoints[0].y}`;
     for (let i = 1; i < pinPoints.length; i++) {
       const p0 = pinPoints[i - 1];
       const p1 = pinPoints[i];
-      const midY = (p0.y + p1.y) / 2;
-      if (isMobile) {
-        const offset = (i % 2 === 0) ? 30 : -30;
-        d += ` C ${p0.x + offset} ${midY}, ${p1.x - offset} ${midY}, ${p1.x} ${p1.y}`;
-      } else {
-        d += ` C ${p0.x} ${midY}, ${p1.x} ${midY}, ${p1.x} ${p1.y}`;
-      }
+      const dy = p1.y - p0.y;
+      const swingX = i % 2 === 1 ? rightEdge : leftEdge;
+      d += ` C ${swingX} ${p0.y + dy * 0.32}, ${swingX} ${p0.y + dy * 0.68}, ${p1.x} ${p1.y}`;
     }
 
     pathEl.setAttribute('d', d);
@@ -597,8 +596,11 @@ function buildEventCard(event, num) {
 
   const polaroid = document.createElement('div');
   polaroid.className = 'polaroid event-card';
-  const rotate = [-3, 2, -1, 3, -2, 1][num % 6];
-  polaroid.style.transform = `rotate(${rotate}deg)`;
+  const rotations = [-6, 3, -4, 7, -2.5, 5, -5, 3.5];
+  const jitters   = [-5, 10, -8, 12, -10, 7, -6, 11];
+  const rotate = rotations[num % rotations.length];
+  const jitter = jitters[num % jitters.length];
+  polaroid.style.transform = `rotate(${rotate}deg) translateX(${jitter}px)`;
 
   const tape = document.createElement('div');
   tape.className = 'polaroid-tape';
@@ -664,7 +666,11 @@ function buildEventCard(event, num) {
   capDiv.className = 'polaroid-caption hand';
   capDiv.textContent = event.title || '';
 
+  const pin = document.createElement('div');
+  pin.className = 'timeline-pin';
+  pin.setAttribute('aria-hidden', 'true');
   polaroid.appendChild(tape);
+  polaroid.appendChild(pin);
   polaroid.appendChild(tag);
   polaroid.appendChild(imgWrap);
   polaroid.appendChild(dateDiv);
