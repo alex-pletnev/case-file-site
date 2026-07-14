@@ -718,6 +718,67 @@ h1, h2 { font-family: var(--font-mono); }
   z-index: 2;
 }
 
+/* Ячейка = полароид + бумажная заметка со «стори» */
+.timeline-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 260px;
+}
+
+.timeline-story {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--ink);
+  background: linear-gradient(180deg, var(--paper) 0%, #EFE5CA 100%);
+  padding: 16px 18px 18px;
+  max-width: 240px;
+  margin-top: 26px;
+  box-shadow:
+    0 3px 8px rgba(0,0,0,0.32),
+    0 10px 24px rgba(0,0,0,0.4);
+  position: relative;
+  transform: rotate(-0.8deg);
+  text-align: left;
+}
+
+/* Скотч сверху — заметка прикреплена к доске */
+.timeline-story::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%) rotate(1.5deg);
+  width: 52px;
+  height: 15px;
+  background: rgba(230, 210, 120, 0.55);
+  border-left: 1px solid rgba(180,160,60,0.25);
+  border-right: 1px solid rgba(180,160,60,0.25);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Загнутый уголок */
+.timeline-story::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(225deg, rgba(0,0,0,0.14) 50%, transparent 50%);
+  pointer-events: none;
+}
+
+.timeline-item.right .timeline-story {
+  transform: rotate(0.9deg);
+}
+
+@media (max-width: 600px) {
+  .timeline-cell { max-width: 100%; }
+  .timeline-story { max-width: 260px; font-size: 12.5px; }
+}
+
 /* Пин на полароидах таймлайна */
 .timeline-pin {
   position: absolute;

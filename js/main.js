@@ -681,7 +681,18 @@ function buildEventCard(event, num) {
     polaroid.addEventListener('click', () => GALLERY.open(event));
   }
 
-  div.appendChild(polaroid);
+  const cell = document.createElement('div');
+  cell.className = 'timeline-cell';
+  cell.appendChild(polaroid);
+
+  if (event.story) {
+    const storyEl = document.createElement('div');
+    storyEl.className = 'timeline-story mono';
+    storyEl.textContent = event.story;
+    cell.appendChild(storyEl);
+  }
+
+  div.appendChild(cell);
   return div;
 }
 
