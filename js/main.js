@@ -789,6 +789,9 @@ async function renderVerdict() {
   const sentenceEl = document.getElementById('sentence-text');
   if (sentenceEl) sentenceEl.textContent = s5.sentence;
 
+  const homeEl = document.getElementById('home-note');
+  if (homeEl && s5.homeNote) homeEl.textContent = s5.homeNote;
+
   const bdEl = document.getElementById('birthday-text');
   if (bdEl) bdEl.textContent = s5.birthday;
 
