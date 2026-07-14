@@ -31,13 +31,31 @@ body {
   background-color: var(--cork);
   color: var(--ink);
   overflow-x: hidden;
-  /* Пробковая текстура — шум через SVG data URI */
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.12'/%3E%3C/svg%3E"),
-    radial-gradient(ellipse at 50% -5%, rgba(255,210,100,0.22) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, var(--cork) 60%, var(--cork-shadow) 100%);
-  background-size: 200px 200px, 100% 80vh, 100% 100%;
+    /* Мелкое зерно пробки */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.28'/%3E%3C/svg%3E"),
+    /* Крупные поры пробки */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.3' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n2)' opacity='0.13'/%3E%3C/svg%3E"),
+    /* Тёплое свечение лампы сверху */
+    radial-gradient(ellipse at 50% -8%, rgba(255,210,80,0.38) 0%, rgba(255,185,55,0.14) 35%, transparent 58%),
+    /* Подсветка центра как от лампы */
+    radial-gradient(ellipse at 50% 25%, #C8986A 0%, var(--cork) 42%, var(--cork-shadow) 100%);
+  background-size: 200px 200px, 300px 300px, 100% 85vh, 100% 100%;
   min-height: 100vh;
+}
+
+/* Деревянная рамка вокруг доски */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  border: 18px solid #1a0b03;
+  box-shadow:
+    inset 0 0 0 2px #3d1e08,
+    inset 0 0 28px rgba(0,0,0,0.45),
+    inset 2px 2px 8px rgba(80,40,10,0.3);
+  pointer-events: none;
+  z-index: 49;
 }
 
 /* Виньетка */
@@ -47,8 +65,8 @@ body::after {
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse at 50% 50%, transparent 42%, rgba(0,0,0,0.58) 100%),
-    linear-gradient(to bottom, rgba(0,0,0,0.12) 0%, transparent 12%, transparent 88%, rgba(0,0,0,0.18) 100%);
+    radial-gradient(ellipse at 50% 50%, transparent 38%, rgba(0,0,0,0.62) 100%),
+    linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, transparent 10%, transparent 90%, rgba(0,0,0,0.15) 100%);
   z-index: 50;
 }
 
