@@ -777,6 +777,39 @@ async function renderTestimony() {
 
   const sigDateEl = document.getElementById('sig-date');
   if (sigDateEl) sigDateEl.textContent = content.acquaintanceDate;
+
+  const margEl = document.getElementById('testimony-marginalia');
+  if (margEl && s4.marginalia) margEl.textContent = s4.marginalia;
+}
+
+/* ─── Рендер вещдоков (секция 2Б) ────── */
+async function renderEvidence() {
+  let content;
+  try {
+    const r = await fetch('./content.json');
+    content = await r.json();
+  } catch { return; }
+
+  const items = content.section2b?.items;
+  const grid = document.getElementById('evidence-grid');
+  if (!grid || !items) return;
+
+  items.forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'evidence-item';
+
+    const num = document.createElement('span');
+    num.className = 'evidence-num stamp-text';
+    num.textContent = `№ ${item.num}`;
+
+    const text = document.createElement('span');
+    text.className = 'evidence-text mono';
+    text.textContent = item.text;
+
+    div.appendChild(num);
+    div.appendChild(text);
+    grid.appendChild(div);
+  });
 }
 
 /* ─── Рендер секции 5 (вердикт) ─────── */
@@ -857,6 +890,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   await Promise.all([
     renderCover(),
     renderWanted(),
+    renderEvidence(),
     renderTestimony(),
     renderVerdict(),
   ]);
