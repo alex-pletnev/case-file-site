@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Дело № 15.07</title>
+
+  <!-- Preconnect для шрифтов -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=Caveat:wght@600&display=swap&subset=cyrillic,latin" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 1 — ОБЛОЖКА ДЕЛА
+     ══════════════════════════════════════ -->
+<section id="section-cover" aria-label="Обложка дела">
+  <div class="folder-wrap" role="button" tabindex="0" aria-label="Открыть дело">
+
+    <div class="folder-back">
+      <div class="folder-tab" aria-hidden="true"></div>
+
+      <div class="folder-front">
+        <!-- Штамп «Совершенно секретно» -->
+        <div class="stamp-secret stamp-text" aria-label="Совершенно секретно">СОВЕРШЕННО СЕКРЕТНО</div>
+
+        <!-- Шнурок -->
+        <div class="folder-lace" aria-hidden="true">
+          <div class="lace-circle"></div>
+          <div class="lace-line"></div>
+          <div class="lace-bow">∞</div>
+          <div class="lace-line"></div>
+          <div class="lace-circle"></div>
+        </div>
+
+        <!-- Текст на папке -->
+        <div class="folder-text">
+          <span class="folder-case-num stamp-text" id="cover-case-num">ДЕЛО № 15.07</span>
+          <div class="folder-title mono" id="cover-title">О ПОХИЩЕНИИ ОДНОГО СЕРДЦА</div>
+          <div class="folder-subtitle hand" id="cover-subtitle">Материалы следствия. Открыть лично Юле.</div>
+        </div>
+
+        <!-- Номер дела внизу -->
+        <div class="stamp-num mono" id="cover-stamp-num">Дело № 15.07 / стр. 001</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Кнопка открытия -->
+  <button class="open-btn" id="open-case-btn" aria-label="Открыть дело">ОТКРЫТЬ ДЕЛО</button>
+
+  <!-- Подсказка прокрутки -->
+  <div class="scroll-hint" aria-hidden="true">↓</div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 2 — ОРИЕНТИРОВКА
+     ══════════════════════════════════════ -->
+<section id="section-wanted" class="section" aria-label="Ориентировка на подозреваемую">
+
+  <span class="section-label stamp-text" aria-hidden="true">— ДОКУМЕНТ № 001 —</span>
+
+  <article class="wanted-card" aria-label="Ориентировка">
+
+    <!-- Дырки скоросшивателя (декоративные) -->
+    <div class="protocol-holes" aria-hidden="true">
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+    </div>
+
+    <div class="wanted-inner">
+
+      <!-- Фото-ориентировка -->
+      <div class="wanted-photo-wrap" aria-hidden="true">
+        <div class="wanted-polaroid">
+          <picture>
+            <source type="image/webp" srcset="./photos/thumb/wanted-portrait.webp" />
+            <img src="./photos/thumb/wanted-portrait.jpg"
+                 alt="Фото подозреваемой"
+                 width="144" height="192"
+                 loading="eager" />
+          </picture>
+        </div>
+        <!-- Скрепка -->
+        <div class="wanted-clip" aria-hidden="true"></div>
+      </div>
+
+      <!-- Текст -->
+      <div class="wanted-text">
+        <span class="wanted-heading stamp-text">РАЗЫСКИВАЕТСЯ</span>
+        <div class="wanted-name-line mono" id="wanted-name">Юля, 20 лет</div>
+
+        <div class="wanted-traits">
+          <span class="trait-label">Особые приметы:</span>
+          <div id="wanted-traits">
+            <div class="trait-item">невероятно красивые голубые глаза — первый месяц прятала, знала, что творит</div>
+            <div class="trait-item">кудрявые волосы</div>
+            <div class="trait-item">готовит так, что это отдельный состав преступления</div>
+            <div class="trait-item">систематизирует всё вокруг — включая потерпевшего</div>
+          </div>
+        </div>
+
+        <div class="wanted-danger mono">Особо опасна:</div>
+        <div class="wanted-danger-text hand" id="wanted-danger">
+          голубые глаза — смотреть дольше трёх секунд без последствий невозможно. Сама знала: весь первый месяц прятала взгляд
+        </div>
+
+        <span class="wanted-lastseen-label mono">Последний раз замечена:</span>
+        <div class="wanted-lastseen hand" id="wanted-lastseen">
+          в моём сердце. Выходить отказывается. Дату заселения установить не представляется возможным — предположительно, с первой прогулки
+        </div>
+
+        <!-- Штамп -->
+        <div class="stamp-detain stamp-text" id="wanted-stamp" aria-live="polite">
+          ЗАДЕРЖАНИЮ НЕ ПОДЛЕЖИТ — ПОДЛЕЖИТ ОБНИМАНИЮ
+        </div>
+      </div>
+
+    </div>
+  </article>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 3 — ХРОНОЛОГИЯ
+     ══════════════════════════════════════ -->
+<section id="section-timeline" class="section" aria-label="Хронология">
+
+  <h2 class="mono" id="section-timeline-heading">МАТЕРИАЛЫ ДЕЛА: хронология событий</h2>
+
+  <!-- Вертикальная ось -->
+  <div class="timeline-axis" aria-hidden="true"></div>
+
+  <!-- Элементы таймлайна (рендерятся JS) -->
+  <div class="timeline-items" id="timeline-items" role="list">
+    <!-- filled by JS -->
+  </div>
+
+</section>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 4 — ПОКАЗАНИЯ ПОТЕРПЕВШЕГО
+     ══════════════════════════════════════ -->
+<section id="section-testimony" class="section" aria-label="Показания потерпевшего">
+
+  <span class="section-label stamp-text" aria-hidden="true">— ДОКУМЕНТ № 002 —</span>
+
+  <article class="protocol-sheet">
+
+    <!-- Дырочки скоросшивателя -->
+    <div class="protocol-holes" aria-hidden="true">
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+    </div>
+
+    <div class="protocol-inner">
+
+      <span class="protocol-heading stamp-text" id="testimony-heading">
+        ПРОТОКОЛ ОПРОСА ПОТЕРПЕВШЕГО
+      </span>
+
+      <div class="protocol-line" aria-hidden="true"></div>
+
+      <p class="protocol-intro mono" id="testimony-intro">
+        Я, потерпевший, находясь в здравом уме и абсолютно влюблённом сердце,
+        показываю следующее. 4 сентября 2024 года на станции метро
+        «Технологический институт» у меня было похищено сердце. Заявление
+        о возврате не подавал. И не подам.
+      </p>
+
+      <div class="protocol-body" id="testimony-body">
+        <p>Улики против подозреваемой собраны исчерпывающие. Прогулка длиной в десять часов, на которой время просто выключили. Глаза, которые она весь первый месяц от меня прятала — теперь я понимаю, почему: смотреть в них безнаказанно невозможно. Ресторан «Счастье», пятьдесят вопросов, чтобы влюбиться, — сработали все пятьдесят. Такси в два часа ночи, в котором я уже знал, что пропал.</p>
+        <p>Отдельно заявляю о том, что подозреваемая сделала со мной за это время. Я научился разговаривать, а не повышать голос. Думать, прежде чем делать. Смотреть на себя со стороны — и хотеть быть лучше. Я научился трудиться, просто глядя, как трудишься ты. Если это называется «дурное влияние» — прошу оставить меня под ним пожизненно.</p>
+        <p>А ещё я люблю возвращаться домой. Туда, где ты готовишь так, что это отдельный состав преступления, и прибегаешь обнять. Где ты, если день не задался, ходишь и ворчишь — и даже это у тебя получается мило. Я видел, как ты берёшь свой самый тяжёлый день, разбираешь его по винтикам и делаешь из него ступеньку. Я горжусь тобой каждый день, Солнце.</p>
+        <p>Юля. Тебе сегодня двадцать. По итогам следствия сообщаю тебе то, что давно перестало быть тайной: я тебя люблю. С днём рождения. Пусть эти твои двадцать станут самым прекрасным годом дела — а дело у нас, напоминаю, пожизненное.</p>
+      </div>
+
+      <!-- Подпись -->
+      <div class="protocol-signature">
+        <div class="sig-block">
+          <span class="sig-label mono">Потерпевший</span>
+          <span class="sig-value hand" id="sig-name">Саша</span>
+        </div>
+        <div class="sig-block">
+          <span class="sig-label mono">С</span>
+          <span class="sig-value hand" id="sig-date">4 сентября 2024 года</span>
+        </div>
+        <div class="sig-block">
+          <span class="sig-label mono">Место</span>
+          <span class="sig-value hand">рядом с тобой</span>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     СЕКЦИЯ 5 — ВЕРДИКТ И ПОЗДРАВЛЕНИЕ
+     ══════════════════════════════════════ -->
+<section id="section-verdict" class="section" aria-label="Вердикт">
+
+  <span class="section-label stamp-text" aria-hidden="true">— ДОКУМЕНТ № 003 —</span>
+
+  <!-- Штамп ВИНОВНА -->
+  <div class="verdict-stamp-wrap" role="img" aria-label="Виновна">
+    <span class="verdict-text stamp-text" id="verdict-text">ВИНОВНА.</span>
+  </div>
+
+  <p class="verdict-sub mono" id="verdict-sub">
+    В том, что делает меня счастливым. Ежедневно. Без смягчающих обстоятельств.
+  </p>
+
+  <!-- Финальное фото -->
+  <div class="final-photo-wrap">
+    <div class="final-polaroid">
+      <picture>
+        <source type="image/webp" srcset="./photos/full/final-photo.webp" />
+        <img src="./photos/full/final-photo.jpg"
+             alt="Финальное фото"
+             width="280" height="360"
+             loading="lazy" />
+      </picture>
+      <div class="final-caption hand">Солнце моё</div>
+    </div>
+  </div>
+
+  <!-- Сердце из нити -->
+  <div class="thread-heart-wrap" aria-hidden="true"></div>
+
+  <p class="sentence-text mono" id="sentence-text">
+    ПРИГОВОР: быть любимой. Пожизненно. Обжалованию не подлежит.
+  </p>
+
+  <p class="birthday-text hand" id="birthday-text">
+    С днём рождения, Юля! ❤️
+  </p>
+
+  <footer>
+    <p class="footer-text mono" id="footer-text">Дело закрыто. Сердце — нет.</p>
+  </footer>
+
+</section>
+
+
+<!-- ══════════════════════════════════════
+     UI-ЭЛЕМЕНТЫ
+     ══════════════════════════════════════ -->
+
+<!-- Кнопка mute -->
+<button class="mute-btn" id="mute-btn" aria-label="Управление звуком" title="Выключить звук">🔊</button>
+
+<!-- Скрипт -->
+<script src="./js/main.js"></script>
+</body>
+</html>

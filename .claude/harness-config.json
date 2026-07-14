@@ -1,0 +1,11 @@
+{
+  "PROJECT_NAME": "case-file-site (Дело № 15.07)",
+  "STACK": "HTML/CSS/JS статика + Python-скрипты (фото-обработка), GitHub Pages",
+  "PRIMARY_BRANCH": "main",
+  "BUILD_COMMAND": "n/a — статический сайт; python3 process_photos.py для обработки фото",
+  "TEST_COMMAND": "n/a — статика; проверка: открыть index.html в браузере + Lighthouse mobile",
+  "LANGUAGE": "RU",
+  "DURATION_BASELINES": "| Команда | Ожидаемое время | Порог тревоги |\n|---------|-----------------|--------------|\n| `python3 process_photos.py` (все фото) | ~60s на фото / ~5-10 min для пакета | >20 min |\n| `python3 generate_manifest.py` | ~5s | >30s |\n| `bash process_media.sh` | ~5-15 min (зависит от кол-ва фото) | >30 min |\n| `python3 -m http.server 8000` до READY | мгновенно | >5s |\n| Lighthouse CLI audit | ~30s | >2 min |",
+  "PROJECT_CONTEXT": "",
+  "SPECIFIC_RULES": ""
+}

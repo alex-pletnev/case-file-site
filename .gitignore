@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+/tmp/
+
+# Secrets / credentials
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+credentials*.json
+
+# Claude Code harness state (per-clone)
+.claude/last-committed-head.txt
+.claude/settings.local.json
+
+# Large originals — не коммитить source-фото (только обработанные)
+photos/source/
+photos/inbox/
+
+# CLAUDE.md backups
+CLAUDE.md.bak-*
