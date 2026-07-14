@@ -1,0 +1,845 @@
+{
+  "events": [
+    {
+      "id": "01-znakomstvo",
+      "title": "Знакомство",
+      "dateLabel": "4 сентября 2024",
+      "caption": "Начало дела. Подозреваемая вошла в доверие с первой минуты. Третья прогулка — десять часов. Потерпевший не заметил.",
+      "note": "Потерпевший утратил чувство времени. Симптом устойчивый. Хронологию восстановить не удалось.",
+      "items": [
+        {
+          "type": "photo",
+          "file": "p001",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p002",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p003",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p004",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p005",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p006",
+          "landscape": false
+        }
+      ]
+    },
+    {
+      "id": "02-restoran-schaste",
+      "title": "Ресторан «Счастье»",
+      "dateLabel": "Осень 2024",
+      "caption": "Пятьдесят вопросов, чтобы влюбиться. Сработали все пятьдесят. Потерпевший сопротивления не оказал.",
+      "note": "Центральная улика. Ресторан «Счастье», держались за руки, закончили в 2 ночи у Александринского. Именно тогда потерпевший осознал, что пропал.",
+      "items": [
+        {
+          "type": "photo",
+          "file": "p001",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p002",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p003",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p004",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p005",
+          "landscape": false
+        }
+      ]
+    },
+    {
+      "id": "03-zima-2024-2025",
+      "title": "Первый отпуск вдвоём",
+      "dateLabel": "Зима 2024–2025",
+      "caption": "Квартира у бабушки с дедушкой. Сменили обстановку — и не захотели уходить.",
+      "note": null,
+      "items": [
+        {
+          "type": "photo",
+          "file": "p001",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p002",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p003",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p004",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p005",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p006",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p007",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p008",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p009",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p010",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p011",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p012",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p013",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p014",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p015",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p016",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p017",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p018",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p019",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p020",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p021",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p022",
+          "landscape": true
+        },
+        {
+          "type": "video",
+          "file": "v001",
+          "landscape": false
+        }
+      ]
+    },
+    {
+      "id": "04-chelyabinsk",
+      "title": "Челябинск",
+      "dateLabel": "Лето 2025",
+      "caption": "Уехала. Следствие запаниковало. Расстояние не помогло — только усугубило.",
+      "note": null,
+      "items": [
+        {
+          "type": "photo",
+          "file": "p001",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p002",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p003",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p004",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p005",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p006",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p007",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p008",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p009",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p010",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p011",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p012",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p013",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p014",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p015",
+          "landscape": true
+        }
+      ]
+    },
+    {
+      "id": "05-kadnikov",
+      "title": "Сюрприз в Кадникове",
+      "dateLabel": "Конец лета 2025",
+      "caption": "Потерпевший выехал за подозреваемой. Добровольно. Без колебаний.",
+      "note": "Дело передано следователю Меглину. Отклонено: сами справимся.",
+      "items": [
+        {
+          "type": "photo",
+          "file": "p001",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p002",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p003",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p004",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p005",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p006",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p007",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p008",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p009",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p010",
+          "landscape": true
+        }
+      ]
+    },
+    {
+      "id": "06-akademicheskaya",
+      "title": "Квартира на Академической",
+      "dateLabel": "Осень 2025",
+      "caption": "Почти съехались. Почти — потому что через несколько месяцев стало совсем.",
+      "note": null,
+      "items": [
+        {
+          "type": "photo",
+          "file": "p002",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p003",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p004",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p005",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p006",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p007",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p008",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p009",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p010",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p011",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p012",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p013",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p014",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p015",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p016",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p017",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p018",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p019",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p020",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p021",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p022",
+          "landscape": true
+        },
+        {
+          "type": "video",
+          "file": "v001",
+          "landscape": false
+        },
+        {
+          "type": "video",
+          "file": "v002",
+          "landscape": true
+        }
+      ]
+    },
+    {
+      "id": "07-ski-zima-2025-2026",
+      "title": "Горные лыжи",
+      "dateLabel": "Зима 2025–2026",
+      "caption": "Юля встала на горные лыжи. Впервые. Следствие вело наблюдение и не могло не восхититься.",
+      "note": null,
+      "items": [
+        {
+          "type": "photo",
+          "file": "p001",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p002",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p003",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p004",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p005",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p006",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p007",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p008",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p009",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p010",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p011",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p012",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p013",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p014",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p015",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p016",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p017",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p018",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p019",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p020",
+          "landscape": true
+        }
+      ]
+    },
+    {
+      "id": "08-14-fevralya-i-vesna",
+      "title": "14 февраля и весна",
+      "dateLabel": "Февраль–весна 2026",
+      "caption": "Потерпевший напоминает: у него каждый день такой. Но этот — особенно.",
+      "note": null,
+      "items": [
+        {
+          "type": "photo",
+          "file": "p001",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p002",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p003",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p004",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p005",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p006",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p007",
+          "landscape": true
+        }
+      ]
+    },
+    {
+      "id": "09-novaya-kvartira",
+      "title": "Новая квартира",
+      "dateLabel": "Май 2026",
+      "caption": "Резко решили, переехали — и зажили сильно лучше. Смена явки пошла делу на пользу.",
+      "note": null,
+      "items": [
+        {
+          "type": "photo",
+          "file": "p001",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p002",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p003",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p004",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p005",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p006",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p007",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p008",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p009",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p010",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p011",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p012",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p013",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p014",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p015",
+          "landscape": false
+        },
+        {
+          "type": "video",
+          "file": "v001",
+          "landscape": false
+        }
+      ]
+    },
+    {
+      "id": "10-kadnikov-mayskie",
+      "title": "Кадников на майские",
+      "dateLabel": "Майские 2026",
+      "caption": "Снова Кадников. Некоторые места умеют ждать.",
+      "note": null,
+      "items": [
+        {
+          "type": "photo",
+          "file": "p001",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p002",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p003",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p004",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p005",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p006",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p007",
+          "landscape": false
+        },
+        {
+          "type": "photo",
+          "file": "p008",
+          "landscape": true
+        },
+        {
+          "type": "video",
+          "file": "v001",
+          "landscape": false
+        }
+      ]
+    },
+    {
+      "id": "11-vr-vecher",
+      "title": "VR-вечер",
+      "dateLabel": "Конец июля 2026",
+      "caption": "Она сама придумала. Нашла, забронировала, оплатила. Пришла с сюрпризом. Имба.",
+      "note": "Следствие зашло в тупик. Расследовать нечего. Он просто её любит. Саша Сулим о таком ещё не снимала.",
+      "items": [
+        {
+          "type": "photo",
+          "file": "p002",
+          "landscape": true
+        },
+        {
+          "type": "video",
+          "file": "v001",
+          "landscape": false
+        },
+        {
+          "type": "video",
+          "file": "v002",
+          "landscape": false
+        },
+        {
+          "type": "video",
+          "file": "v004",
+          "landscape": false
+        }
+      ]
+    },
+    {
+      "id": "12-nakanune-dr",
+      "title": "Накануне",
+      "dateLabel": "14 июля 2026",
+      "caption": "Завтра двадцать. Хочется остановить время. Не получится — и это хорошо.",
+      "note": null,
+      "items": [
+        {
+          "type": "photo",
+          "file": "p001",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p002",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p003",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p004",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p005",
+          "landscape": true
+        },
+        {
+          "type": "photo",
+          "file": "p007",
+          "landscape": false
+        },
+        {
+          "type": "video",
+          "file": "v001",
+          "landscape": false
+        }
+      ]
+    }
+  ],
+  "wanted": {
+    "event": "portrait-wanted",
+    "file": "p001"
+  },
+  "final": {
+    "event": "portrait-final",
+    "file": "p001"
+  }
+}
